@@ -1,0 +1,661 @@
+:root {
+    --primary: coral;
+    --secondary: whitesmoke;
+}
+
+header {
+    width: 100%;
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+
+header .social-links {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-links li {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+header .infos {
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infos div {
+    color: var(--secondary);
+}
+
+.infos div span {
+    margin-left: 5px;
+}
+
+nav {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo h2 {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    margin-left: 1.2rem;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+    color: var(--primary);
+
+}
+
+.nav-links li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.burger {
+    margin-right: 1rem;
+    display: none;
+}
+
+.burger div {
+    margin: 5px;
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+
+}
+
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: var(--primary);
+}
+
+#title h1 {
+    font-size: 3rem;
+    color: var(--secondary);
+}
+
+#wedos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wedo-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.wedo-left h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.wedo-left .description {
+    padding: 2rem 0;
+}
+
+.wedo-left .wedo-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.wedo-left .wedo-button {
+
+    width: 200px;
+    height: 40px;
+    color: var(--secondary);
+    background: var(--primary);
+    border: none;
+    font-size: 1.4rem;
+
+}
+
+.wedo-right {
+    width: 500px;
+    height: 300px;
+    background: var(--secondary);
+    border-radius: 10px;
+    margin-right: 2rem;
+    background-image: url('https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-evenly;
+
+}
+
+#offers .quote {
+    color: var(--primary);
+    font-weight: lighter;
+}
+
+
+#offers h3 {
+    color: grey;
+    width: 90%;
+    text-align: center;
+}
+
+
+.offers-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 0rem;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.benefit-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.5s ease-in-out all;
+}
+
+.benefit-box .icon {
+    color: var(--primary);
+    padding-bottom: 1rem;
+}
+
+.benefit-box h2 {
+    padding: 1rem 0;
+}
+
+.benefit-box p {
+    padding: 1rem 1rem;
+}
+
+.benefit-box:hover {
+    background-color: var(--primary);
+}
+
+.benefit-box:hover .icon {
+    color: white;
+}
+
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    min-height: 100vh;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.service-head {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+
+
+.service-head .icon {
+    color: var(--primary);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.service-head h1 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    transition: 0.5s ease-in-out all;
+    cursor: pointer;
+}
+
+.service p {
+    width: 80%;
+}
+
+.service-head h1:hover {
+    color: var(--primary);
+}
+
+#footerr {
+    width: 100%;
+    min-height: 50vh;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 2rem 0;
+
+}
+
+.footer-container h2 {
+    color: var(--secondary);
+    font-size: 1.8rem;
+}
+
+.footer-container hr {
+    background-color: var(--secondary);
+    height: 1px;
+    width: 100%;
+    margin: 1rem 0;
+
+    border: none;
+}
+
+
+
+.footer-about p {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    padding-top: 1.1rem;
+}
+
+
+
+.quick-links .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.quick-links .links li {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter .newsletter-email {
+    height: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-top: 1.7rem;
+}
+
+.newsletter button {
+    height: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary);
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--primary);
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    header .infos {
+        display: flex;
+        width: 65%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #wedos {
+        grid-gap: 3rem;
+    }
+
+    .wedo-left {
+        padding-left: 2rem;
+    }
+
+    .wedo-right {
+        width: 450px;
+    }
+
+    .offers-benefits {
+        grid-gap: 1rem;
+    }
+
+    .benefit-box {
+        width: 290px;
+    }
+
+    .service-head h1 {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #wedos {
+        grid-gap: 1rem;
+    }
+
+    #services {
+        padding: 3rem 0;
+    }
+
+    .service p {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #wedos {
+        grid-gap: 0;
+    }
+
+    .wedo-left {
+        padding-left: 1rem;
+    }
+
+    .wedo-left .wedo-list {
+        grid-gap: 0rem;
+    }
+
+    .wedo-right {
+        margin-right: 1rem;
+        width: 400px;
+    }
+
+
+
+    .footer-container {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:950px) {
+
+    .wedo-left .description {
+        padding: 1rem 0;
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .wedo h3 {
+        font-size: 0.99rem;
+    }
+
+    .wedo p {
+        font-size: 0.8rem;
+    }
+
+
+
+    .benefit-box {
+        width: 260px;
+    }
+
+    .benefit-box h2 {
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .benefit-box p {
+        width: 90%;
+        font-size: 0.8rem;
+        padding: 1rem 0rem;
+    }
+
+    .services-content {
+        width: 100%;
+    }
+
+    .service-head h1 {
+        font-size: 1.2rem;
+    }
+
+    .service p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    header .infos {
+        width: 85%;
+    }
+
+    header .social-links {
+        width: 15%;
+    }
+
+    .nav-links {
+        width: 65%;
+    }
+
+    .wedo-right {
+        width: 350px;
+    }
+
+    .benefit-box {
+        width: 240px;
+    }
+
+    .services-content {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        padding-left: 1.5rem;
+    }
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    header {
+        min-height: 10vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+
+    header .social-links {
+        width: 50%;
+    }
+
+    header .infos {
+        display: none;
+    }
+
+    nav {
+        z-index: 100;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger:active .nav-links {
+        transform: translateX(100%);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        top: 20vh;
+        position: absolute;
+        z-index: 1;
+        background: var(--secondary);
+        transform: translateX(-100%);
+        height: 50vh;
+        transition: 1s ease-in-out all;
+    }
+
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        justify-content: space-evenly;
+        width: 55% !important;
+        padding: 2rem 0;
+    }
+
+    .nav-active .nav-links {
+        transform: translate(0%) !important;
+    }
+
+    .burger div {
+        transition: 0.5s ease-in-out all;
+    }
+
+    .nav-active .burger .line1 {
+        transform: rotate(-45deg) translate(-20px, -5px);
+    }
+
+    .nav-active .burger .line2 {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-active .burger .line3 {
+        transform: rotate(45deg) translate(-15px, 8px);
+
+    }
+
+
+
+    #wedos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .wedo-left {
+        text-align: center;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .wedo-left .title {
+        font-size: 2.5rem;
+    }
+
+    .wedo-left .description {
+        padding: 2rem 0;
+        font-size: 1rem;
+    }
+
+    .wedo-left .wedo-list {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        width: 90%;
+    }
+
+    .wedo-left .wedo-button {
+        width: 150px;
+        height: 50px;
+
+    }
+
+    #offers {
+        padding: 4rem 0;
+    }
+
+    #offers h3 {
+        font-size: 1rem;
+    }
+
+    .offers-benefits {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+
+    .services-content {
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .service-head {
+        grid-template-columns: 1fr 7fr;
+    }
+
+
+    .wedo-right {
+        display: none;
+    }
+
+
+
+}
